@@ -38,7 +38,22 @@ header ul {
     display: flex;
     align-items: center;
 }
+header ul li {
+    display: flex;
+}
+
 header ul a.link {
     padding: 12px;
     background-color: darkcyan;
+}
+@media screen and (max-width: 500px) {
+    header {
+        flex-direction: column;
+    }
+    header a#logo-container {
+        margin-bottom: 12px;
+    }
+    header ul {
+        justify-content: space-between;
+    }
 }
